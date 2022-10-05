@@ -1,1 +1,1 @@
-type Includes<T extends readonly any[], U> = any
+type Includes<T extends unknown[], U> = U extends T[number] ? true : false;
